@@ -1,0 +1,52 @@
+/*!
+ * Footer content
+ */
+.footer {
+  background: $color-black;
+  margin-bottom: 0;
+
+  & .questions {
+    margin-top: -55px;
+  }
+
+  & .address {
+    margin-top: 50px;
+    padding-bottom: 30px;
+
+    & p {
+      font-size: 18px;
+
+    }
+
+    & .tel {
+      background: url("../images/icon-4.png") left center no-repeat;
+      padding-left: 50px;
+    }
+    & .time {
+      background: url("../images/icon-3.png") left center no-repeat;
+      padding-left: 50px;
+      padding-bottom: 10px;
+      padding-top: 10px;
+    }
+    & .mail {
+      background: url("../images/icon-2.png") left center no-repeat;
+      padding-left: 50px;
+      padding-bottom: 10px;
+      padding-top: 10px;
+    }
+    
+    & a {
+      
+      &:hover {
+        text-decoration: none;
+        color: $color-blue-light;
+      }
+    }
+  }
+  
+  & .copyright {
+    border-top: 3px solid $color-blue;
+    background: $color-white;
+    padding: 20px;
+  }
+}

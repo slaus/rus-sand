@@ -305,6 +305,9 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center; }
+    @media screen and (max-width: 767px) {
+      .header-slogan {
+        min-height: 500px; } }
   .header-top {
     min-height: 60px;
     background: #121212;
@@ -362,6 +365,11 @@ a {
           padding-left: 25px;
           padding-right: 25px;
           display: block; }
+          @media screen and (max-width: 767px) {
+            .header-menu ul li a {
+              font-size: 18px;
+              padding-left: 5px;
+              padding-right: 5px; } }
           .header-menu ul li a:hover {
             text-decoration: none;
             color: #279ad2; }
@@ -380,12 +388,21 @@ a {
     background: #279ad2;
     min-height: 75px;
     margin-top: -36px; }
+    @media screen and (max-width: 767px) {
+      .header-mail {
+        height: 170px; } }
     .header-mail-form {
       min-height: 75px;
       display: flex;
       justify-content: space-around;
       align-items: center;
       align-content: center; }
+      @media screen and (max-width: 767px) {
+        .header-mail-form {
+          flex-direction: column;
+          height: 170px;
+          padding-top: 10px;
+          padding-bottom: 10px; } }
       .header-mail-form .description {
         margin-top: 0;
         margin-bottom: 0;
@@ -397,6 +414,12 @@ a {
         @media screen and (max-width: 991px) {
           .header-mail-form .description {
             display: none; } }
+      @media screen and (max-width: 767px) {
+        .header-mail-form input {
+          width: 100%;
+          max-width: 400px;
+          margin-left: 10px !important;
+          margin-right: 10px !important; } }
       .header-mail-form input:not(#submit) {
         height: 42px;
         padding-left: 10px;
@@ -418,6 +441,9 @@ a {
       justify-content: space-between;
       align-items: center;
       align-content: center; }
+      @media screen and (max-width: 767px) {
+        .header-count-block {
+          display: none; } }
       .header-count-block p {
         margin-bottom: 0; }
         @media screen and (max-width: 1199px) {
@@ -449,14 +475,24 @@ a {
     border-left: 10px solid #279ad2;
     display: flex;
     justify-content: space-around;
-    height: 115px;
+    min-height: 115px;
     align-items: center; }
+    @media screen and (max-width: 767px) {
+      .main .take-price-block {
+        display: block;
+        padding: 20px;
+        text-align: center; } }
     .main .take-price-block h2 {
       margin-top: 0;
       margin-bottom: 0; }
       @media screen and (max-width: 991px) {
         .main .take-price-block h2 {
           margin-right: 30px; } }
+      @media screen and (max-width: 767px) {
+        .main .take-price-block h2 {
+          text-align: center;
+          font-size: 26px;
+          margin-bottom: 20px; } }
 
 .main .catalogue {
   padding: 15px 5px 0; }

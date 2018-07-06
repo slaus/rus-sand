@@ -1,0 +1,343 @@
+/*!
+ * Main content
+ */
+
+.main {
+
+  & .take-price {
+    background: $color-black url("../images/take-price-bg.jpg") center center repeat-y;
+    background-size: cover;
+
+    &-block {
+      border-left: 10px solid $color-blue;
+      display: flex;
+      justify-content: space-around;
+      min-height: 115px;
+      align-items: center;
+
+      @media screen and (max-width: 767px) {
+        display: block;
+        padding: 20px;
+        text-align: center;
+      }
+
+      & h2 {
+        margin-top: 0;
+        margin-bottom: 0;
+
+        @media screen and (max-width: 991px) {
+          margin-right: 30px;
+        }
+        @media screen and (max-width: 767px) {
+          text-align: center;
+          font-size: 26px;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+
+  & .catalogue {
+    padding: 15px 5px 0;
+
+    &-block {
+
+      @media screen and (max-width: 991px) {
+        width: 50%;
+      }
+      @media screen and (max-width: 499px) {
+        width: 100%;
+      }
+
+    }
+
+    & .item {
+      position: relative;
+      display: block;
+      min-height: 170px;
+
+      @media screen and (max-width: 991px) {
+        min-height: 120px;
+      }
+
+      &:hover .price {
+        transition: .5s;
+        height: 100%;
+      }
+
+      & .title {
+        position: absolute;
+        text-align: center;
+        width: 200px;
+        margin: auto;
+        left: 0;
+        right: 0;
+        top: 20%;
+        font-size: 30px;
+
+        @media screen and (max-width: 991px) {
+          top: 15%;
+          width: 150px;
+          font-size: 26px;
+        }
+        @media screen and (max-width: 499px) {
+          top: 30%;
+        }
+      }
+
+      & img {
+
+        @media screen and (max-width: 499px) {
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      & .price {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 65px;
+        background-color: rgba(0,0,0,.57);
+        font-variant: small-caps;
+        font-size: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: .5s;
+
+        @media screen and (max-width: 991px) {
+          height: 50px;
+        }
+
+        & span {
+          margin-left: 5px;
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+
+  & .reviews {
+    background: $color-grey;
+  }
+
+  & .delivery {
+    background: $color-grey url("../images/delivery-bg.jpg") center center no-repeat;
+    background-size: cover;
+
+    &-block {
+
+      &-transport {
+
+        & img {
+          margin-left: auto;
+          margin-right: auto;
+          width: 100%;
+          max-width: 176px;
+        }
+      }
+    }
+  }
+}
+
+
+.jcarousel-wrapper {
+  margin: 20px auto;
+  position: relative;
+}
+
+.jcarousel-wrapper .jcarousel-control-prev,
+.jcarousel-wrapper .jcarousel-control-next {
+  position: absolute;
+  top: 50%;
+  margin-top: -30px;
+  width: 32px;
+  height: 59px;
+}
+
+.jcarousel-wrapper .jcarousel-control-prev, .parallax_classic.bullets .leftNav {
+  background: none;
+  left: -15px;
+  display: block;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  &:hover {
+    //background: $color-blue;
+    text-decoration: none;
+
+    &:after {
+      color: $color-blue-dark;
+    }
+  }
+
+  &:after {
+    content: "\f104";
+    font-family: FontAwesome;
+    color: $color-blue;
+    font-size: 72px;
+    display: block;
+    //border: 2px solid $color-blue;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    border-radius: 50%;
+    text-decoration: none;
+    line-height: 40px;
+    padding-right: 4px;
+  }
+}
+
+.jcarousel-wrapper .jcarousel-control-next, .parallax_classic.bullets .rightNav {
+  background: none;
+  right: -15px;
+  display: block;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  &:hover {
+    //background: $color-blue;
+    text-decoration: none;
+
+    &:after {
+      color: $color-blue-dark;
+    }
+  }
+
+  &:after {
+    content: "\f105";
+    font-family: FontAwesome;
+    color: $color-blue;
+    font-size: 72px;
+    display: block;
+    //border: 2px solid $color-blue;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    border-radius: 50%;
+    text-decoration: none;
+    line-height: 40px;
+    padding-left: 4px;
+  }
+}
+
+.jcarousel-wrapper .jcarousel-pagination {
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  margin: 0;
+}
+
+.jcarousel-wrapper .jcarousel-pagination a {
+  text-decoration: none;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+  line-height: 10px;
+  background: #fff;
+  border-radius: 50%;
+  text-indent: -9999px;
+  margin-right: 7px;
+  opacity: .25;
+}
+
+.jcarousel-wrapper .jcarousel-pagination a.active {
+  background: $color-blue;
+  opacity: 1;
+}
+
+.jcarousel-wrapper .jcarousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.jcarousel-wrapper .jcarousel ul {
+  width: 20000em;
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.jcarousel-wrapper .jcarousel ul li {
+  float: left;
+  width: 200px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+  & div {
+    position: relative;
+    background: $color-white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 0;
+
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 20px;
+      top: 0px;
+      z-index: 1;
+      width: 50px;
+      height: 44px;
+      background: url("../images/quote.png") center center no-repeat;
+    }
+  }
+}
+
+.jcarousel-wrapper .jcarousel ul li img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.jcarousel-wrapper .jcarousel ul li .photo {
+  width: 126px;
+  height: 126px;
+  border-radius: 5%;
+  display: block;
+  margin: 0 auto 30px;
+  background: $color-grey;
+  float: left;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.jcarousel-wrapper .jcarousel ul li h4 {
+  font-size: 20px;
+  font-weight: 600;
+  font-variant: small-caps;
+  z-index: 2;
+  display: block;
+  position: relative;
+}
+.jcarousel-wrapper .jcarousel ul li p {
+  font-size: 14px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.jcarousel-wrapper .jcarousel ul li .testimonials-stars {
+  margin: -20px auto 10px;
+  text-align: center;
+}
+
+.jcarousel-wrapper .jcarousel ul li .testimonials-stars img {
+  display: inline-block;
+  max-width: 100%;
+  height: auto !important;
+}

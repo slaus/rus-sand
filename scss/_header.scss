@@ -1,0 +1,239 @@
+/*!
+ * Header content
+ */
+
+.header {
+  min-height: 590px;
+  background: $color-black url("../images/header-bg.jpg") center center no-repeat;
+  background-size: cover;
+
+  &-slogan {
+    min-height: 410px;
+    vertical-align: middle;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media screen and (max-width: 767px) {
+      min-height: 500px;
+    }
+  }
+  
+  &-top {
+    min-height: 60px;
+    background: $color-black;
+    color: $color-white;
+
+    &-menu {
+      font-variant: small-caps;
+      display: flex;
+      justify-content: space-between;
+      height: 60px;
+      align-items: center;
+
+      @media screen and (max-width: 991px) {
+        flex-direction: column;
+        justify-content: space-around;
+        height: 180px;
+      }
+
+      & .mail {
+        display: flex;
+        align-items: center;
+
+        & img {
+          margin-right: 10px;
+        }
+      }
+      & .time {
+        display: flex;
+        align-items: center;
+
+        & img {
+          margin-right: 10px;
+        }
+      }
+      & .tel {
+        display: flex;
+        align-items: center;
+
+        & img {
+          margin-right: 10px;
+        }
+      }
+
+      & a {
+        color: $color-white;
+
+        &:hover {
+          text-decoration: none;
+          color: $color-blue-light;
+        }
+      }
+    }
+  }
+
+  &-menu {
+    height: 85px;
+    border-bottom: 1px solid $color-grey;
+    position: relative;
+
+    & ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      width: max-content;
+      margin-left: auto;
+      margin-right: auto;
+      display: inline-block;
+
+      & li {
+        display: inline-block;
+        
+        & a {
+          color: $color-white;
+          font-variant: small-caps;
+          font-size: 20px;
+          line-height: 85px;
+          padding-left: 25px;
+          padding-right: 25px;
+          display: block;
+
+          @media screen and (max-width: 767px) {
+            font-size: 18px;
+            padding-left: 5px;
+            padding-right: 5px;
+          }
+
+          &:hover {
+            text-decoration: none;
+            color: $color-blue;
+          }
+        }
+      }
+    }
+
+    & .call {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      line-height: 80px;
+
+      @media screen and (max-width: 991px) {
+        left: 0;
+        top: 80px;
+        margin: auto;
+      }
+    }
+  }
+  
+  &-mail {
+    background: $color-blue;
+    min-height: 75px;
+    margin-top: -36px;
+
+    @media screen and (max-width: 767px) {
+      height: 170px;
+    }
+
+    &-form {
+      min-height: 75px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      align-content: center;
+
+      @media screen and (max-width: 767px) {
+        flex-direction: column;
+        height: 170px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+
+      & .description {
+        margin-top: 0;
+        margin-bottom: 0;
+        display: block;
+        font-variant: small-caps;
+
+        @media screen and (max-width: 1199px) {
+          font-size: 16px;
+        }
+        @media screen and (max-width: 991px) {
+          display: none;
+        }
+      }
+
+      & input {
+
+        @media screen and (max-width: 767px) {
+          width: 100%;
+          max-width: 400px;
+          margin-left: 10px !important;
+          margin-right: 10px !important;
+        }
+      }
+
+      & input:not(#submit) {
+        height: 42px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border: 0;
+        background: $color-blue-light;
+        margin-right: 10px;
+
+        &#name {
+          margin-left: auto;
+
+          @media screen and (max-width: 991px) {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
+  
+  &-count {
+    height: 170px;
+    background: $color-black;
+
+    &-block {
+      height: 130px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      align-content: center;
+
+      @media screen and (max-width: 767px) {
+        display: none;
+      }
+
+      & p {
+        margin-bottom: 0;
+
+        @media screen and (max-width: 1199px) {
+          font-size: 16px;
+        }
+        @media screen and (max-width: 991px) {
+          font-size: 14px;
+        }
+      }
+
+      & .number {
+        font-size: 60px;
+        width: 190px;
+        margin-right: 10px;
+        height: auto;
+
+        @media screen and (max-width: 1199px) {
+          font-size: 48px;
+          width: auto;
+        }
+        @media screen and (max-width: 991px) {
+          font-size: 36px;
+        }
+      }
+    }
+  }
+}
