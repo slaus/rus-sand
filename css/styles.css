@@ -299,12 +299,16 @@ a {
   min-height: 590px;
   background: #121212 url("../images/header-bg.jpg") center center no-repeat;
   background-size: cover; }
+  .header.contacts {
+    min-height: 360px; }
   .header-slogan {
     min-height: 410px;
     vertical-align: middle;
     display: flex;
     flex-direction: column;
     justify-content: center; }
+    .header-slogan.contacts {
+      min-height: 230px; }
     @media screen and (max-width: 767px) {
       .header-slogan {
         min-height: 500px; } }
@@ -468,6 +472,84 @@ a {
 /*!
  * Main content
  */
+.main .feedback {
+  background: #e8e8e8;
+  -moz-box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.29);
+  -webkit-box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.29);
+  box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.29);
+  border-top: 5px solid #279ad2;
+  padding-top: 30px;
+  padding-bottom: 20px; }
+  .main .feedback a {
+    color: #121212; }
+    .main .feedback a:hover {
+      text-decoration: none;
+      color: #279ad2; }
+  .main .feedback p {
+    padding-left: 50px;
+    line-height: 34px;
+    font-size: 18px; }
+  .main .feedback-point {
+    background: url("../images/icon-9.png") left top no-repeat; }
+  .main .feedback-address {
+    background: url("../images/icon-10.png") left top no-repeat; }
+  .main .feedback-tel {
+    background: url("../images/icon-11.png") left top no-repeat; }
+  .main .feedback-time {
+    background: url("../images/icon-12.png") left top no-repeat; }
+  .main .feedback-mail {
+    background: url("../images/icon-13.png") left top no-repeat; }
+
+.main .send-mail {
+  width: 100%;
+  font-variant: small-caps; }
+  .main .send-mail label {
+    display: inline-block;
+    font-weight: 300;
+    width: 125px;
+    text-align: right;
+    margin-right: 10px;
+    vertical-align: top; }
+    @media screen and (max-width: 499px) {
+      .main .send-mail label {
+        text-align: left;
+        width: 100%;
+        display: block; } }
+    .main .send-mail label span {
+      font-weight: 600;
+      color: red; }
+  .main .send-mail input:not([id="submit"]) {
+    height: 50px;
+    width: calc(100% - 140px);
+    background: #e8e8e8;
+    border: 0;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px; }
+    @media screen and (max-width: 499px) {
+      .main .send-mail input:not([id="submit"]) {
+        width: 100%; } }
+  .main .send-mail textarea {
+    height: 155px;
+    width: calc(100% - 140px);
+    background: #e8e8e8;
+    border: 0;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px; }
+    @media screen and (max-width: 499px) {
+      .main .send-mail textarea {
+        width: 100%; } }
+
+.main ul {
+  border-left: 10px solid #279ad2;
+  padding-top: 15px;
+  padding-bottom: 10px; }
+  .main ul li {
+    margin-left: 20px;
+    font-variant: small-caps;
+    font-weight: 600; }
+
 .main .take-price {
   background: #121212 url("../images/take-price-bg.jpg") center center repeat-y;
   background-size: cover; }
@@ -502,6 +584,39 @@ a {
   @media screen and (max-width: 499px) {
     .main .catalogue-block {
       width: 100%; } }
+  .main .catalogue .price-block h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .main .catalogue .price-block h3.kvarcevyj-pesok {
+      background: url("../images/catalogue-1.jpg") center center no-repeat;
+      background-size: cover; }
+    .main .catalogue .price-block h3.granatovyj-pesok {
+      background: url("../images/catalogue-2.jpg") center center no-repeat;
+      background-size: cover; }
+    .main .catalogue .price-block h3.stalnaja-drob {
+      background: url("../images/catalogue-3.jpg") center center no-repeat;
+      background-size: cover; }
+    .main .catalogue .price-block h3.abrazivnyj-poroshok {
+      background: url("../images/catalogue-4.jpg") center center no-repeat;
+      background-size: cover; }
+    .main .catalogue .price-block h3.rezinovaja-kroshka {
+      background: url("../images/catalogue-5.jpg") center center no-repeat;
+      background-size: cover; }
+    .main .catalogue .price-block h3.sol {
+      background: url("../images/catalogue-6.jpg") center center no-repeat;
+      background-size: cover; }
+  .main .catalogue .price-block .table {
+    font-variant: small-caps; }
+    .main .catalogue .price-block .table td {
+      background: #c5c5c5; }
+    .main .catalogue .price-block .table tr:nth-child(odd) td:nth-child(even) {
+      background: #d8d7d7; }
+    .main .catalogue .price-block .table tr:nth-child(even) td:nth-child(odd) {
+      background: #d8d7d7; }
   .main .catalogue .item {
     position: relative;
     display: block;

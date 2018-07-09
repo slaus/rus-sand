@@ -125,7 +125,7 @@ jQuery(function ($) {
                 width = carousel.innerWidth();
 
             if (width >= 900) {
-                width = width / 5;
+                width = width / 4;
             } else if (width >= 600) {
                 width = width / 3;
             } else if (width >= 350) {
