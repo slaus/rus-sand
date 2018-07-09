@@ -3,6 +3,112 @@
  */
 
 .main {
+  
+  & .feedback {
+    background: $color-grey;
+    -moz-box-shadow: 3px 4px 5px rgba(0,0,0,.29);
+    -webkit-box-shadow: 3px 4px 5px rgba(0,0,0,.29);
+    box-shadow: 3px 4px 5px rgba(0,0,0,.29);
+    //min-height: 275px;
+    border-top: 5px solid $color-blue;
+    padding-top: 30px;
+    padding-bottom: 20px;
+
+    & a {
+      color: $color-black;
+
+      &:hover {
+        text-decoration: none;
+        color: $color-blue;
+      }
+    }
+
+    & p {
+      padding-left: 50px;
+      line-height: 34px;
+      font-size: 18px;
+    }
+
+    &-point {
+      background: url("../images/icon-9.png") left top no-repeat;
+    }
+    &-address {
+      background: url("../images/icon-10.png") left top no-repeat;
+    }
+    &-tel {
+      background: url("../images/icon-11.png") left top no-repeat;
+    }
+    &-time {
+      background: url("../images/icon-12.png") left top no-repeat;
+    }
+    &-mail {
+      background: url("../images/icon-13.png") left top no-repeat;
+    }
+  }
+
+  & .send-mail {
+    width: 100%;
+    font-variant: small-caps;
+
+    & label {
+      display: inline-block;
+      font-weight: 300;
+      width: 125px;
+      text-align: right;
+      margin-right: 10px;
+      vertical-align: top;
+
+      @media screen and (max-width: 499px) {
+        text-align: left;
+        width: 100%;
+        display: block;
+      }
+
+      & span {
+        font-weight: 600;
+        color: red;
+      }
+    }
+
+    & input:not([id="submit"]) {
+      height: 50px;
+      width: calc(100% - 140px);
+      background: $color-grey;
+      border: 0;
+      margin-bottom: 10px;
+      padding-left: 20px;
+      padding-right: 20px;
+
+      @media screen and (max-width: 499px) {
+        width: 100%;
+      }
+    }
+    & textarea {
+      height: 155px;
+      width: calc(100% - 140px);
+      background: $color-grey;
+      border: 0;
+      margin-bottom: 10px;
+      padding-left: 20px;
+      padding-right: 20px;
+
+      @media screen and (max-width: 499px) {
+        width: 100%;
+      }
+    }
+  }
+
+  & ul {
+    border-left: 10px solid #279ad2;
+    padding-top: 15px;
+    padding-bottom: 10px;
+
+    & li {
+      margin-left: 20px;
+      font-variant: small-caps;
+      font-weight: 600;
+    }
+  }
 
   & .take-price {
     background: $color-black url("../images/take-price-bg.jpg") center center repeat-y;
@@ -49,6 +155,59 @@
         width: 100%;
       }
 
+    }
+
+    & .price-block {
+
+      & h3 {
+        margin-top: 0;
+        margin-bottom: 0;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+        &.kvarcevyj-pesok {
+          background: url("../images/catalogue-1.jpg") center center no-repeat;
+          background-size: cover;
+        }
+        &.granatovyj-pesok {
+          background: url("../images/catalogue-2.jpg") center center no-repeat;
+          background-size: cover;
+        }
+        &.stalnaja-drob {
+          background: url("../images/catalogue-3.jpg") center center no-repeat;
+          background-size: cover;
+        }
+        &.abrazivnyj-poroshok {
+          background: url("../images/catalogue-4.jpg") center center no-repeat;
+          background-size: cover;
+        }
+        &.rezinovaja-kroshka {
+          background: url("../images/catalogue-5.jpg") center center no-repeat;
+          background-size: cover;
+        }
+        &.sol {
+          background: url("../images/catalogue-6.jpg") center center no-repeat;
+          background-size: cover;
+        }
+      }
+
+      & .table {
+        font-variant: small-caps;
+        
+        & td {
+          background: #c5c5c5;
+        }
+
+        & tr:nth-child(odd) td:nth-child(even) {
+          background: #d8d7d7;
+        }
+        & tr:nth-child(even) td:nth-child(odd) {
+          background: #d8d7d7;
+        }
+      }
     }
 
     & .item {

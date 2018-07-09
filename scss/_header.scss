@@ -7,12 +7,20 @@
   background: $color-black url("../images/header-bg.jpg") center center no-repeat;
   background-size: cover;
 
+  &.contacts {
+    min-height: 360px;
+  }
+
   &-slogan {
     min-height: 410px;
     vertical-align: middle;
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    &.contacts {
+      min-height: 230px;
+    }
 
     @media screen and (max-width: 767px) {
       min-height: 500px;
