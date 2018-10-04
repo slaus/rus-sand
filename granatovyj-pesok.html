@@ -118,9 +118,14 @@
             <div class="row">
                 <div class="container">
                     <div class="col-xs-12 header-mail">
-                        <form action="" method="post" class="header-mail-form">
-                            <p class="description white bold">Отправьте заявку и получите доступ к оптовым ценам</p>
-                            <input type="text" name="name" id="name" placeholder="Ваше имя" required>
+                        <form action="sendmail.php" method="post" class="header-mail-form">
+                            <p class="description white bold">Отправьте заявку и получите доступ к оптовым ценам <br>
+                                <span style="font-size: 14px;">Отправляя письмо, вы соглашаетесь с <a
+                                        href="https://ru.wikipedia.org/wiki/%D0%A4%D0%B5%D0%B4%D0%B5%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9_%D0%B7%D0%B0%D0%BA%D0%BE%D0%BD_%C2%AB%D0%9E_%D0%BF%D0%B5%D1%80%D1%81%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D1%85_%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85%C2%BB"
+                                        rel="nofollow" target="_blank" class="white">152-ФЗ</a>.
+                                </span>
+                            </p>
+                            <input type="text" name="name" id="name" placeholder="Ваше имя">
                             <input type="email" name="mail" id="mail" placeholder="E-mail" required>
                             <input type="hidden" name="order" value="Заявка на получение оптовых цен">
                             <input type="submit" id="submit" class="btn btn-default text-uppercase blue animation bold"
@@ -336,9 +341,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 header-mail questions">
-                    <form action="" method="post" class="header-mail-form">
-                        <p class="description white bold">У Вас есть вопросы? Получите бесплатную консультацию.</p>
-                        <input type="text" name="name" id="name" placeholder="Ваше имя" required>
+                    <form action="sendmail.php" method="post" class="header-mail-form">
+                        <p class="description white bold">У Вас есть вопросы? Получите бесплатную консультацию. <br>
+                            <span style="font-size: 14px;">Отправляя письмо, вы соглашаетесь с <a
+                                    href="https://ru.wikipedia.org/wiki/%D0%A4%D0%B5%D0%B4%D0%B5%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9_%D0%B7%D0%B0%D0%BA%D0%BE%D0%BD_%C2%AB%D0%9E_%D0%BF%D0%B5%D1%80%D1%81%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D1%85_%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85%C2%BB"
+                                    rel="nofollow" target="_blank" class="white">152-ФЗ</a>.
+                                </span>
+                        </p>
+                        <input type="text" name="name" id="name" placeholder="Ваше имя">
                         <input type="tel" name="tel" id="tel" placeholder="Номер телефона" required>
                         <input type="hidden" name="order" value="Заявка на получение бесплатной консультации">
                         <input type="submit" id="submit" class="btn btn-default text-uppercase blue animation bold"
@@ -412,6 +422,11 @@
 <script src="js/script.js"></script>
 <!-- endbuild -->
 
+<!-- BEGIN JIVOSITE CODE {literal} -->
+<script type='text/javascript'>
+    (function(){ var widget_id = '9p9W55NKeS';var d=document;var w=window;function l(){
+        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();</script>
+<!-- {/literal} END JIVOSITE CODE -->
 </body>
 
 </html>
