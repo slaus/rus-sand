@@ -7,7 +7,7 @@ html, body {
   width:100%;
   margin:0;
   padding:0;
-  //overflow: -webkit-paged-y;
+  overflow-x: hidden;
 }
 
 
@@ -89,7 +89,7 @@ input:focus, textarea, a, button {
   background-color: $color-blue;
   text-transform: uppercase;
   position: fixed;
-  right: 40px;
+  left: 40px;
   bottom: 50px;
   border-radius: 50%;
   line-height: 48px;
